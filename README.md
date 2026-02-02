@@ -1,18 +1,18 @@
 <div align="center">
   <img src="public/TwitCanva-logo.png" alt="TwitCanva Logo" width="120" />
-  <h1>TwitCanva</h1>
+  <h1>ViDMAKER by SBouldin</h1>
 </div>
 
 A modern, AI-powered canvas application for generating and manipulating images and videos using OpenAI GPT Image, Google Gemini, Kling AI, Hailuo AI (MiniMax), and Fal.ai. Built with React, TypeScript, and Vite.
 
-![TwitCanva](https://img.shields.io/badge/React-18.3.1-blue)
+![ViDMAKER](https://img.shields.io/badge/React-18.3.1-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-blue)
 ![Vite](https://img.shields.io/badge/Vite-6.4.1-purple)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=SankaiAI/TwitCanva-Video-Workflow&type=date&legend=top-left)](https://www.star-history.com/#SankaiAI/TwitCanva-Video-Workflow&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=SBouldin/ViDMAKER-Video-Workflow&type=date&legend=top-left)](https://www.star-history.com/#SBouldin/ViDMAKER-Video-Workflow&type=date&legend=top-left)
 
 ## ✨ Features
 
@@ -86,8 +86,8 @@ https://github.com/user-attachments/assets/3c36de54-d37e-4875-8403-5b6e4a6216e0
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/SankaiAI/TwitCanva.git
-   cd TwitCanva
+   git clone https://github.com/SBouldin/ViDMAKER.git
+   cd ViDMAKER
    ```
 
 2. **Install dependencies**
@@ -160,7 +160,7 @@ If you prefer using Docker to run the application in a containerized environment
 
 ### Optional: Local Open-Source Models Setup
 
-TwitCanva supports running open-source AI models (like Stable Diffusion, Qwen Camera Control, ControlNet) locally on your GPU. This is **optional** - the cloud-based AI models work without this setup.
+ViDMAKER supports running open-source AI models (like Stable Diffusion, Qwen Camera Control, ControlNet) locally on your GPU. This is **optional** - the cloud-based AI models work without this setup.
 
 **Requirements:**
 - NVIDIA GPU with 8GB+ VRAM (12GB+ recommended for larger models)
@@ -506,5 +506,5 @@ If you are using this project for commercial purposes or building a commercial p
 
 ---
 
-**Built with ❤️ using React, TypeScript, and AI APIs from OpenAI, Google, Kling, MiniMax, and Fal.ai (2025)**
+**Built with ❤️ using React, TypeScript, and AI APIs from OpenAI, Google, Kling, MiniMax, and Fal.ai by SBouldin (2025)**
 
