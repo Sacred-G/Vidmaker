@@ -67,7 +67,7 @@ Generate a camera-angle-adjusted image.
 ```json
 {
   "image": "base64-encoded-result",
-  "prompt": "将镜头向左旋转45度 Rotate...",
+  "prompt": "Rotate the camera 45 degrees to the left...",
   "seed": 12345,
   "inference_time_ms": 15234.5
 }

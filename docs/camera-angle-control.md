@@ -50,7 +50,7 @@ models/
     │   └── transformer/
     │       └── transformer_weights.safetensors
     └── loras/
-        └── 镜头转换.safetensors    # Angle LoRA (~236MB)
+        └── camera-angle-conversion.safetensors    # Angle LoRA (~236MB)
 ```
 
 ### Download Commands
@@ -70,7 +70,7 @@ huggingface-cli download linoyts/Qwen-Image-Edit-Rapid-AIO \
 
 # Download camera angle LoRA (~236MB)
 huggingface-cli download dx8152/Qwen-Edit-2509-Multiple-angles \
-    镜头转换.safetensors \
+    camera-angle-conversion.safetensors \
     --local-dir models/camera-control/loras
 ```
 
@@ -160,7 +160,7 @@ POST /generate
 ```json
 {
     "image": "base64_encoded_result",
-    "prompt": "将镜头向右旋转45度... Rotate the camera 45 degrees...",
+    "prompt": "Rotate the camera 45 degrees to the right...",
     "seed": 42,
     "inference_time_ms": 5200
 }
@@ -170,14 +170,14 @@ POST /generate
 
 ## Prompt Mapping
 
-The 3D control values map to Chinese+English prompts:
+The 3D control values map to English prompts:
 
 | Control | Value | Prompt |
 |---------|-------|--------|
-| Rotation | +45° | 将镜头向左旋转45度 Rotate the camera 45 degrees to the left |
-| Rotation | -45° | 将镜头向右旋转45度 Rotate the camera 45 degrees to the right |
-| Tilt | < -10° | 将相机转向鸟瞰视角 Turn the camera to a bird's-eye view |
-| Tilt | > +10° | 将相机切换到仰视视角 Turn the camera to a worm's-eye view |
+| Rotation | +45° | Rotate the camera 45 degrees to the left |
+| Rotation | -45° | Rotate the camera 45 degrees to the right |
+| Tilt | < -10° | Turn the camera to a bird's-eye view |
+| Tilt | > +10° | Turn the camera to a worm's-eye view |
 
 ---
 

@@ -24,7 +24,7 @@ MODELS_DIR = os.path.join(PROJECT_ROOT, "models", "camera-control")
 BASE_MODEL_ID = "Qwen/Qwen-Image-Edit-2509"
 TRANSFORMER_ID = "linoyts/Qwen-Image-Edit-Rapid-AIO"
 LORA_ID = "dx8152/Qwen-Edit-2509-Multiple-angles"
-LORA_WEIGHT_NAME = "镜头转换.safetensors"
+LORA_WEIGHT_NAME = "camera-angle-conversion.safetensors"
 
 # Inference settings
 DEFAULT_STEPS = 4

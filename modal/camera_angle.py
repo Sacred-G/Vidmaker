@@ -43,7 +43,7 @@ app = modal.App("camera-angle-control", image=image)
 BASE_MODEL_ID = "Qwen/Qwen-Image-Edit-2509"
 TRANSFORMER_ID = "linoyts/Qwen-Image-Edit-Rapid-AIO"
 LORA_ID = "dx8152/Qwen-Edit-2509-Multiple-angles"
-LORA_WEIGHT_NAME = "镜头转换.safetensors"
+LORA_WEIGHT_NAME = "camera-angle-conversion.safetensors"
 
 # Use Modal Volume for persistent model caching
 model_volume = modal.Volume.from_name("camera-angle-models", create_if_missing=True)
@@ -58,14 +58,14 @@ MODEL_CACHE_PATH = "/models"
 # PROMPT TEMPLATES
 # ============================================================================
 
-# These prompts are bilingual (Chinese + English) to match the Qwen LoRA training data
+# These prompts are English-only for camera angle control
 PROMPT_TEMPLATES = {
-    "rotate_left": "将镜头向左旋转{degrees}度 Rotate the camera {degrees} degrees to the left.",
-    "rotate_right": "将镜头向右旋转{degrees}度 Rotate the camera {degrees} degrees to the right.",
-    "birds_eye": "将相机转向鸟瞰视角 Turn the camera to a bird's-eye view.",
-    "worms_eye": "将相机切换到仰视视角 Turn the camera to a worm's-eye view.",
-    "close_up": "将镜头转为特写镜头 Turn the camera to a close-up.",
-    "wide_angle": "将镜头转为广角镜头 Turn the camera to a wide-angle lens.",
+    "rotate_left": "Rotate the camera {degrees} degrees to the left.",
+    "rotate_right": "Rotate the camera {degrees} degrees to the right.",
+    "birds_eye": "Turn the camera to a bird's-eye view.",
+    "worms_eye": "Turn the camera to a worm's-eye view.",
+    "close_up": "Turn the camera to a close-up.",
+    "wide_angle": "Turn the camera to a wide-angle lens.",
     "no_movement": "no camera movement"
 }
 

@@ -1,7 +1,7 @@
 """
 prompts.py
 Camera angle prompt construction for Qwen Image Edit model.
-Converts rotation/tilt values to Chinese+English bilingual prompts.
+Converts rotation/tilt values to English prompts.
 MATCHES LOGIC IN: modal/camera_angle.py
 """
 
@@ -9,14 +9,14 @@ MATCHES LOGIC IN: modal/camera_angle.py
 # PROMPT TEMPLATES
 # ============================================================================
 
-# These prompts are bilingual (Chinese + English) to match the Qwen LoRA training data
+# These prompts are English-only for camera angle control
 PROMPT_TEMPLATES = {
-    "rotate_left": "将镜头向左旋转{degrees}度 Rotate the camera {degrees} degrees to the left.",
-    "rotate_right": "将镜头向右旋转{degrees}度 Rotate the camera {degrees} degrees to the right.",
-    "birds_eye": "将相机转向鸟瞰视角 Turn the camera to a bird's-eye view.",
-    "worms_eye": "将相机切换到仰视视角 Turn the camera to a worm's-eye view.",
-    "close_up": "将镜头转为特写镜头 Turn the camera to a close-up.",
-    "wide_angle": "将镜头转为广角镜头 Turn the camera to a wide-angle lens.",
+    "rotate_left": "Rotate the camera {degrees} degrees to the left.",
+    "rotate_right": "Rotate the camera {degrees} degrees to the right.",
+    "birds_eye": "Turn the camera to a bird's-eye view.",
+    "worms_eye": "Turn the camera to a worm's-eye view.",
+    "close_up": "Turn the camera to a close-up.",
+    "wide_angle": "Turn the camera to a wide-angle lens.",
     "no_movement": "no camera movement"
 }
 

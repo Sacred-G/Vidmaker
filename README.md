@@ -253,7 +253,7 @@ huggingface-cli download linoyts/Qwen-Image-Edit-Rapid-AIO \
 
 # Download camera angle LoRA (~236MB)
 huggingface-cli download dx8152/Qwen-Edit-2509-Multiple-angles \
-    镜头转换.safetensors \
+    camera-angle-conversion.safetensors \
     --local-dir models/camera-control/loras
 ```
 
